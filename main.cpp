@@ -73,6 +73,8 @@ int main()
 
     Comms.disableEvent("Eins");
     Comms.executeEvent("Eins");
+    Outline();
+
     Comms.enableEvent("Eins");
     Comms.executeEvent("Eins");
     Outline();
