@@ -22,8 +22,7 @@ void Commandinterface::registerEvent(const std::string Name, Order* Event)
 
     }
 
-    std::pair<std::string, Order*> Ev(Name, Event);
-    Command.insert(Ev);
+    Command.insert(std::pair<std::string, Order*>(Name, Event));
 
 } // registerEvent()
 
